@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: joon.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 17 07:22:14 2026 GMT
+  hsts: false
+domains:
+- domain: joon.co
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

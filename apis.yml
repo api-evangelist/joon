@@ -1,25 +1,78 @@
 aid: joon
+
 name: Joon
-description: 'Joon is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by boldstart-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://joon.co/images/og-thumbnail.png
+
+description: 'Joon provides AI-managed cybersecurity solutions, offering autonomous virtual experts that integrate with existing security stacks to deliver rapid SOC modernization, continuous threat detection, and automated response, backed by service level agreements and enterprise-grade compliance.'
+
 url: https://raw.githubusercontent.com/api-evangelist/joon/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- AI
+- Cybersecurity
+- SOC
+- Automation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- boldstart-ventures
+
 common:
+- type: WellKnown
+  url: well-known/joon-well-known.yml
+- type: Compliance
+  url: https://trust.joon.co/
+- type: Hosts
+  url: hosts/joon-hosts.yml
+- type: TermsOfService
+  url: https://joon.co/terms
+- type: PrivacyPolicy
+  url: https://joon.co/privacy
+- type: Documentation
+  url: https://dev.joon.co/
+- type: TrustCenter
+  url: security/joon-trust-center.yml
+- type: DomainSecurity
+  url: security/joon-domain-security.yml
 - type: Website
   url: https://joon.co
+
+apis: []
+
+x-backed-by:
+- boldstart-ventures
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://joon.co
+    status: 200
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
